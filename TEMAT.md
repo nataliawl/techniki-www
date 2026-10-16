@@ -1,3 +1,5 @@
+## Temat społeczności
+
 ## Karta ograniczeń
 c1: 0 monochrom
 c2: 4 kanban

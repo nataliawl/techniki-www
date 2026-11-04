@@ -5,8 +5,8 @@ W zinie znajduje się atrykuł o silniku RPG Maker, artykuł o historii RPG Make
 oraz lista klasyków, które powstały przed 2015.
 
 ## Karta ograniczeń
-c1: 0 monochrom
-c2: 4 kanban
-c3: 8 offline
-c4: 0 klawiatura
+c1: 0 monochrom - jedna barwa w wielu jasnościach
+c2: 4 kanban - kolumny statusów z kartami
+c3: 8 offline - działa z localStorage bez sieci
+c4: 0 klawiatura - całość bez myszy, widoczny focus
 p5: 12 mod 3 = 0 wizualizacja danych

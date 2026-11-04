@@ -1,47 +1,40 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: Verdana, sans-serif;
     background-color: #F8F9FA;
+    font-size: 1rem;
+    line-height: 1.5;
     margin: 0;
     padding: 0;
 }
 
-.head {
+.naglowek {
     background-color: #6C757D;
     color: #E9ECEF;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
-    box-shadow:
-            0px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
 }
 
-.head h1 {
-    font-size: 24px;
-    margin: 0;
-}
-
-.head img {
-    width: 50px;
-    margin-right: 10px;
+.naglowek h1 {
+    font-size: 1.75rem;
+    margin: 0.2rem;
 }
 
 .kanban{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 20px;
+    padding: 10px;
 }
 
 .kanban_col {
-    width: calc(100% - 30px);
+    width: calc(100% - 32px);
     max-width: 22rem;
-    margin: 10px;
+    margin: 20px;
     background-color: #E9ECEF;
     border-radius: 10px;
-    padding: 20px;
-    box-shadow:
-            0px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
 }
 
 .kanban_col h2 {
@@ -58,7 +51,7 @@ body {
     margin-bottom: 10px;
 }
 
-.task {
+.task_box{
     background-color: #F8F9FA;
     padding: 10px;
     border-radius: 5px;
@@ -66,16 +59,17 @@ body {
     cursor: move;
 }
 
+.
 
 .add_task_button {
     background-color: #495057;
     border: none;
     color: #F8F9FA;
     text-align: center;
-    text-decoration: none;
     display: inline-block;
-    font-size: 14px;
-    border-radius: 5px;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    border-radius: 0.4rem;
     cursor: pointer;
     transition: background-color 0.3s;
 }
@@ -98,6 +92,12 @@ body {
 }
 
 .stopka{
-
+    background-color: #6C757D;
+    color: #E9ECEF;
+    display: flex;
+    padding: 1rem;
+    font-size: 1rem;
+    margin: 0.2rem;
 }
+
 

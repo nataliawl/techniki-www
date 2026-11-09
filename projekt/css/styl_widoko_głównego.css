@@ -1,18 +1,21 @@
+:root{
+    --wtlo: #F8F9FA;
+    --wnaglowek: #6C757D;
+    --wtekstnag: #F8F9FA;
+    --wtekst: #212529;
+    --kanbancol: #DEE2E6;
+    --buttoncol: #E9ECEF;
+}
+
 body {
     font-family: Verdana, sans-serif;
-    background-color: #F8F9FA;
-    font-size: 1rem;
-    line-height: 1.5;
-    margin: 0;
-    padding: 0;
+    background-color: var(--wtlo);
 }
 
 .naglowek {
-    background-color: #6C757D;
-    color: #E9ECEF;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
+    background-color: var(--wnaglowek);
+    color: var(--wtekstnag);
     padding: 1rem;
 }
 
@@ -24,80 +27,118 @@ body {
 .kanban{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    place-items: center;
     padding: 10px;
 }
 
 .kanban_col {
     width: calc(100% - 32px);
-    max-width: 22rem;
-    margin: 20px;
-    background-color: #E9ECEF;
+    flex: 1 1 200px;
+    margin: 10px;
+    background-color: var(--kanbancol);
     border-radius: 10px;
     padding: 15px;
 }
 
 .kanban_col h2 {
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #212529;
+    font-size: 1.2rem;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    color: var(--wtekst);
+}
+
+hr{
+    border: 1px solid var(--wnaglowek);
+    margin-bottom: 12px;
 }
 
 .task_input {
-    width: 60%;
+    width: 50%;
     padding: 8px;
-    border: 1px solid #F8F9FA;
+    color: var(--wtekst);
+    background-color: var(--wtlo);
+    border: 1px solid var(--wnaglowek);
     border-radius: 5px;
     margin-bottom: 10px;
 }
 
 .task_box{
-    background-color: #F8F9FA;
+    color: var(--wtekst);
+    background-color: var(--wtlo);
     padding: 10px;
+    border: 1px solid var(--buttoncol);
     border-radius: 5px;
     margin-bottom: 10px;
     cursor: move;
 }
+#zrobione {
+    margin-bottom: 25px;
+}
 
-.
+.add_task{
+    display: flex;
+    flex-wrap: wrap
+}
 
 .add_task_button {
-    background-color: #495057;
-    border: none;
-    color: #F8F9FA;
+    flex: 1 1 50px;
+    border: 1px solid var(--wnaglowek);
+    background-color: var(--buttoncol);
+    color: var(--wtekst);
     text-align: center;
-    display: inline-block;
-    padding: 0.5rem;
-    font-size: 0.9rem;
-    border-radius: 0.4rem;
+    padding: 8px;
+    border-radius: 5px;
+    margin-left: 6px;
+    margin-bottom: 10px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
-
 .add_task_button:hover{
-    background-color: #343A40;
+    background-color: var(--wnaglowek);
+    border: 1px solid var(--wtlo);
+    color: var(--wtekstnag);
 }
-
 
 .task {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid #F8F9FA;
+    border: 1px solid var(--wtlo);
     border-radius: 5px;
     padding: 5px;
     margin-bottom: 5px;
-    cursor: move;
 }
 
 .stopka{
-    background-color: #6C757D;
-    color: #E9ECEF;
-    display: flex;
-    padding: 1rem;
-    font-size: 1rem;
-    margin: 0.2rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+    background-color: var(--wnaglowek);
+    color: var(--wtekstnag);
+    padding: 0.4rem;
+    font-size: 0.7rem;
+}
+
+@media (prefers-color-scheme: dark){
+    :root{
+        --wtlo: #212529;
+        --wnaglowek: #495057;
+        --wtekstnag: #F8F9FA;
+        --wtekst: #F8F9FA;
+        --kanbancol: #343A40;
+        --buttoncol: #6C757D;
+    }
+}
+@media (min-width: 48rem){
+    .kanban{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+    }
 }
 
 

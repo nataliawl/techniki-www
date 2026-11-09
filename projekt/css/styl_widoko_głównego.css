@@ -16,6 +16,7 @@ body {
     text-align: center;
     background-color: var(--wnaglowek);
     color: var(--wtekstnag);
+    margin-bottom: 10px;
     padding: 1rem;
 }
 
@@ -24,28 +25,32 @@ body {
     margin: 0.2rem;
 }
 
+
 .kanban{
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
-    place-items: center;
     padding: 10px;
 }
 
 .kanban_col {
     width: calc(100% - 32px);
-    flex: 1 1 200px;
+    flex: 1 1 150px;
     margin: 10px;
     background-color: var(--kanbancol);
     border-radius: 10px;
     padding: 15px;
+    border: 1px solid var(--wnaglowek);
 }
 
 .kanban_col h2 {
+    text-align: center;
     font-size: 1.2rem;
     margin-top: 5px;
     margin-bottom: 15px;
     color: var(--wtekst);
+
 }
 
 hr{
@@ -54,8 +59,8 @@ hr{
 }
 
 .task_input {
-    width: 50%;
-    padding: 8px;
+    width: 60%;
+    padding: 15px;
     color: var(--wtekst);
     background-color: var(--wtlo);
     border: 1px solid var(--wnaglowek);
@@ -67,29 +72,29 @@ hr{
     color: var(--wtekst);
     background-color: var(--wtlo);
     padding: 10px;
-    border: 1px solid var(--buttoncol);
+    border: 1px solid var(--wnaglowek);
     border-radius: 5px;
     margin-bottom: 10px;
-    cursor: move;
 }
 #zrobione {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .add_task{
     display: flex;
-    flex-wrap: wrap
+    margin-bottom: 10px;
+    margin-top: 20px;
 }
 
 .add_task_button {
-    flex: 1 1 50px;
+    flex: 1;
     border: 1px solid var(--wnaglowek);
     background-color: var(--buttoncol);
     color: var(--wtekst);
     text-align: center;
     padding: 8px;
     border-radius: 5px;
-    margin-left: 6px;
+    margin-left: 10px;
     margin-bottom: 10px;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -97,18 +102,8 @@ hr{
 
 .add_task_button:hover{
     background-color: var(--wnaglowek);
-    border: 1px solid var(--wtlo);
+    border: 1px solid var(--wtekst);
     color: var(--wtekstnag);
-}
-
-.task {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border: 1px solid var(--wtlo);
-    border-radius: 5px;
-    padding: 5px;
-    margin-bottom: 5px;
 }
 
 .stopka{
@@ -119,8 +114,8 @@ hr{
     margin-top: 20px;
     background-color: var(--wnaglowek);
     color: var(--wtekstnag);
-    padding: 0.4rem;
-    font-size: 0.7rem;
+    padding: 0.2rem;
+    font-size: 0.75rem;
 }
 
 @media (prefers-color-scheme: dark){
@@ -133,12 +128,30 @@ hr{
         --buttoncol: #6C757D;
     }
 }
-@media (min-width: 48rem){
+
+@media (min-width: 38rem){
     .kanban{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 1rem;
+        grid-column-start: 1;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        margin-left: 50px;
+        margin-right: 50px;
     }
+
+    hr{
+        margin-bottom: 20px;
+    }
+    .kanban_col{
+        min-width: 100px;
+        min-height: 25rem;
+        max-height: 45rem;
+    }
+
+    #zrobione{
+        margin-bottom: auto;
+    }
+
 }
 
 

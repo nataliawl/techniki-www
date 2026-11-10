@@ -1,10 +1,21 @@
-:root{
+/*:root{
     --wtlo: #F8F9FA;
     --wnaglowek: #6C757D;
     --wtekstnag: #F8F9FA;
     --wtekst: #212529;
     --kanbancol: #DEE2E6;
+    --tekstbox: #F8F9FA;
     --buttoncol: #E9ECEF;
+}*/
+
+:root{
+    --wtlo: #FFEBEB;
+    --wnaglowek: #520000;
+    --wtekstnag: #FFEBEB;
+    --wtekst: #FFEBEB;
+    --kanbancol: #7F0000;
+    --tekstbox: #9C0000;
+    --buttoncol: #B80000;
 }
 
 body {
@@ -57,14 +68,14 @@ body {
 }
 
 hr{
-    border: 1px solid var(--wnaglowek);
+    border: 1px solid var(--buttoncol);
     margin-bottom: 10px;
 }
 
 .task_input {
     padding: 10px;
     color: var(--wtekst);
-    background-color: var(--wtlo);
+    background-color: var(--tekstbox);
     border: 1px solid var(--wnaglowek);
     border-radius: 5px;
     margin-bottom: 10px;
@@ -72,7 +83,7 @@ hr{
 
 .task_box{
     color: var(--wtekst);
-    background-color: var(--wtlo);
+    background-color: var(--tekstbox);
     padding: 10px;
     border: 1px solid var(--wnaglowek);
     border-radius: 5px;
@@ -172,7 +183,7 @@ input{
     color: var(--wtekstnag);
 }
 
-@media (prefers-color-scheme: dark){
+/*@media (prefers-color-scheme: dark){
     :root{
         --wtlo: #212529;
         --wnaglowek: #495057;
@@ -180,6 +191,18 @@ input{
         --wtekst: #F8F9FA;
         --kanbancol: #343A40;
         --buttoncol: #6C757D;
+    }
+}*/
+
+@media (prefers-color-scheme: dark){
+    :root{
+        --wtlo: #140000;
+        --wnaglowek: #3D0000;
+        --wtekstnag: #FFEBEB;
+        --wtekst: #FFEBEB;
+        --kanbancol: #520000;
+        --tekstbox: #7F0000;
+        --buttoncol: #AA0000;
     }
 }
 

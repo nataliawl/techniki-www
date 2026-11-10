@@ -13,18 +13,22 @@ body {
 }
 
 .naglowek {
-    text-align: center;
     background-color: var(--wnaglowek);
     color: var(--wtekstnag);
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     padding: 1rem;
 }
-
-.naglowek h1 {
+.naglowek h2{
+    text-align: center;
     font-size: 1.75rem;
     margin: 0.2rem;
 }
 
+.naglowek h1 {
+    text-align: center;
+    font-size: 1.55rem;
+    margin: 0.2rem;
+}
 
 .kanban{
     display: flex;
@@ -50,7 +54,6 @@ body {
     margin-top: 5px;
     margin-bottom: 10px;
     color: var(--wtekst);
-
 }
 
 hr{
@@ -120,6 +123,55 @@ hr{
     font-size: 0.75rem;
 }
 
+.formularz{
+    background-color: var(--kanbancol);
+    border-radius: 10px;
+    height: 100%;
+    padding: 15px;
+    border: 1px solid var(--wnaglowek);
+}
+p{
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: var(--wtekst);
+}
+label{
+    color: var(--wtekst);
+}
+
+input{
+
+    padding: 10px;
+    color: var(--wtekst);
+    background-color: var(--wtlo);
+    border: 1px solid var(--wnaglowek);
+    width:100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.wyslij{
+    border: 1px solid var(--wnaglowek);
+    width:100%;
+    background-color: var(--buttoncol);
+    color: var(--wtekst);
+    text-align: center;
+    font-size: 20px;
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.wyslij:hover{
+    background-color: var(--wnaglowek);
+    border: 1px solid var(--wtekst);
+    color: var(--wtekstnag);
+}
+
 @media (prefers-color-scheme: dark){
     :root{
         --wtlo: #212529;
@@ -145,6 +197,9 @@ hr{
 
     .naglowek h1 {
         font-size: clamp(1.4rem, 3vw, 1.75rem);
+    }
+    .naglowek h2 {
+        font-size: clamp(1.2rem, 3vw, 1.55rem);
     }
 
     .kanban_col h2 {

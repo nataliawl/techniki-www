@@ -9,13 +9,13 @@
 }*/
 
 :root{
-    --wtlo: #FFEBEB;
-    --wnaglowek: #520000;
-    --wtekstnag: #FFEBEB;
-    --wtekst: #FFEBEB;
-    --kanbancol: #7F0000;
-    --tekstbox: #9C0000;
-    --buttoncol: #B80000;
+    --wtlo: #FCEEEE;
+    --wnaglowek: #561010;
+    --wtekstnag: #FCEEEE;
+    --wtekst: #FCEEEE;
+    --kanbancol: #8A1919;
+    --tekstbox: #AC2020;
+    --buttoncol: #CF2626;
 }
 
 body {
@@ -196,13 +196,11 @@ input{
 
 @media (prefers-color-scheme: dark){
     :root{
-        --wtlo: #140000;
-        --wnaglowek: #3D0000;
-        --wtekstnag: #FFEBEB;
-        --wtekst: #FFEBEB;
-        --kanbancol: #520000;
-        --tekstbox: #7F0000;
-        --buttoncol: #AA0000;
+        --wtlo: #1C0505;
+        --wnaglowek: #370A0A;
+        --kanbancol: #561010;
+        --tekstbox: #8A1919;
+        --buttoncol: #AC2020;
     }
 }
 
@@ -226,7 +224,7 @@ input{
     }
 
     .kanban_col h2 {
-        font-size: clamp(0.8rem, 1vw, 1.5rem);
+        font-size: clamp(0.7rem, 2.5vw, 1.5rem);
         flex-shrink: 0;
     }
 
@@ -238,7 +236,6 @@ input{
     .task_box{
         word-wrap: break-word;
         font-size: clamp(0.4rem, 2vw, 1.2rem);
-
     }
 
     .add_task{

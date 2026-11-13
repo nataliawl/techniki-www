@@ -89,6 +89,7 @@ hr{
     border-radius: 5px;
     margin-bottom: 10px;
 }
+
 #zrobione {
     margin-bottom: 20px;
 }
@@ -130,57 +131,8 @@ hr{
     margin-top: 20px;
     background-color: var(--wnaglowek);
     color: var(--wtekstnag);
-    padding: 0.2rem;
+    padding: 0.5rem;
     font-size: 0.75rem;
-}
-
-.formularz{
-    background-color: var(--kanbancol);
-    border-radius: 10px;
-    height: 100%;
-    padding: 15px;
-    border: 1px solid var(--wnaglowek);
-}
-p{
-    text-align: center;
-    font-size: 1.2rem;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    color: var(--wtekst);
-}
-label{
-    color: var(--wtekst);
-}
-
-input{
-
-    padding: 10px;
-    color: var(--wtekst);
-    background-color: var(--wtlo);
-    border: 1px solid var(--wnaglowek);
-    width:100%;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-
-.wyslij{
-    border: 1px solid var(--wnaglowek);
-    width:100%;
-    background-color: var(--buttoncol);
-    color: var(--wtekst);
-    text-align: center;
-    font-size: 20px;
-    padding: 8px;
-    margin-top: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.wyslij:hover{
-    background-color: var(--wnaglowek);
-    border: 1px solid var(--wtekst);
-    color: var(--wtekstnag);
 }
 
 /*@media (prefers-color-scheme: dark){

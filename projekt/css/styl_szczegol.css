@@ -1,0 +1,44 @@
+@import "styl_widoko_głównego.css";
+
+.yume_desc{
+    background-color: var(--kanbancol);
+    border-radius: 10px;
+    height: 100%;
+    margin: 1rem 0.5rem 2.7rem;
+    padding: 15px;
+    border: 1px solid var(--wnaglowek);
+    color: var(--wtekst);
+}
+
+a {
+    text-decoration: none;
+    color: var(--wtekst);
+    transition: background-color 0.3s;
+}
+
+a:hover{
+    color: var(--buttoncol);
+}
+
+.okladka_mob{
+    display: block;
+    margin: 20px auto;
+    width: 95%;
+    border: 2px solid var(--wtekst);
+}
+.yume_desc h2{
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0.2rem;
+    color: var(--wtekst);
+}
+
+.yume_desc h3{
+    text-align: start;
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.7rem;
+    color: var(--wtekst);
+}
+
+

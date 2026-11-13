@@ -206,7 +206,7 @@ hr{
         flex: 1 1 120px;
         max-width: 100%;
         box-sizing: border-box;
-        font-size: clamp(0.5rem, 1.5vw, 1rem);
+        font-size: clamp(0.7rem, 1.5vw, 1rem);
     }
 
     .add_task_button{
@@ -234,6 +234,6 @@ hr{
     }
 
     .stopka{
-        font-size: clamp(0.9rem, 2vw, 1.4rem);
+        font-size: clamp(0.9rem, 2vw, 1rem);
     }
 }

@@ -26,19 +26,30 @@ body {
 .naglowek {
     background-color: var(--wnaglowek);
     color: var(--wtekstnag);
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     padding: 1rem;
 }
+
+.linki{
+    display: flex;
+    justify-content: space-between;
+}
+
+.linki a{
+    font-size: 1.1rem;
+    justify-content: space-between;
+}
+
 .naglowek h2{
     text-align: center;
     font-size: 1.75rem;
-    margin: 0.2rem;
+    margin: 0.5rem;
 }
 
 .naglowek h1 {
     text-align: center;
     font-size: 1.55rem;
-    margin: 0.2rem;
+    margin: 0.5rem;
 }
 
 .kanban{
@@ -57,6 +68,16 @@ body {
     border-radius: 10px;
     padding: 15px;
     border: 1px solid var(--wnaglowek);
+}
+
+a {
+    text-decoration: none;
+    color: var(--wtekst);
+    transition: background-color 0.3s;
+}
+
+a:hover{
+    color: var(--buttoncol);
 }
 
 .kanban_col h2 {
@@ -131,7 +152,7 @@ hr{
     margin-top: 20px;
     background-color: var(--wnaglowek);
     color: var(--wtekstnag);
-    padding: 0.5rem;
+    padding: 0.75rem;
     font-size: 0.75rem;
 }
 
@@ -171,8 +192,13 @@ hr{
     .naglowek h1 {
         font-size: clamp(1.4rem, 3vw, 1.75rem);
     }
+
     .naglowek h2 {
         font-size: clamp(1.2rem, 3vw, 1.55rem);
+    }
+
+    .linki a{
+        font-size: clamp(1rem, 2vw, 1.4rem);
     }
 
     .kanban_col h2 {
@@ -187,7 +213,7 @@ hr{
 
     .task_box{
         word-wrap: break-word;
-        font-size: clamp(0.4rem, 2vw, 1.2rem);
+        font-size: clamp(1rem, 2vw, 1.3rem);
     }
 
     .add_task{
@@ -206,12 +232,12 @@ hr{
         flex: 1 1 120px;
         max-width: 100%;
         box-sizing: border-box;
-        font-size: clamp(0.7rem, 1.5vw, 1rem);
+        font-size: clamp(1rem, 2vw, 1.2rem);
     }
 
     .add_task_button{
         flex: 1 1 130px;
-        font-size: clamp(0.5rem, 2vw, 1.1rem);
+        font-size: clamp(0.9rem, 2vw, 1.2rem);
     }
 
     hr{
@@ -234,6 +260,6 @@ hr{
     }
 
     .stopka{
-        font-size: clamp(0.9rem, 2vw, 1rem);
+        font-size: clamp(1rem, 2vw, 1.5rem);
     }
 }

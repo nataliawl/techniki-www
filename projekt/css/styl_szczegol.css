@@ -5,7 +5,7 @@
     border-radius: 10px;
     height: 100%;
     margin: 1rem 0.5rem 2.7rem;
-    padding: 15px;
+    padding: 25px;
     border: 1px solid var(--wnaglowek);
     color: var(--wtekst);
 }
@@ -23,7 +23,8 @@ a:hover{
 .okladka_mob{
     display: block;
     margin: 20px auto;
-    width: 95%;
+    width: 100%;
+    border-radius: 5px;
     border: 2px solid var(--wtekst);
 }
 .yume_desc h2{
@@ -33,12 +34,54 @@ a:hover{
     color: var(--wtekst);
 }
 
+.opis{
+    margin-bottom: 1.25rem;
+}
+
 .yume_desc h3{
     text-align: start;
     font-size: 1.2rem;
-    margin-top: 1.5rem;
     margin-bottom: 0.7rem;
     color: var(--wtekst);
 }
 
+@media (min-width: 28rem){
+    .yume_desc{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas:
+                "gora gora"
+                "tresc zdjecie";
+        gap:clamp(30px, 2vw, 50px);
+    }
+
+    .whole_opis{
+        margin-top: 0;
+        grid-area: tresc;
+        font-size: clamp(1rem, 2vw, 1.4rem);
+    }
+
+    .yume_desc h2{
+        grid-area: gora;
+        font-size: clamp(2rem, 2vw, 3rem);
+    }
+
+    .opis{
+        margin-bottom: 1.25rem;
+    }
+
+    .okladka_mob{
+        display: flex;
+        grid-area: zdjecie;
+        margin: auto;
+        width: 100%;
+        height: 100%;
+        border: 2px solid var(--wtekst);
+    }
+
+    .yume_desc h3{
+        margin-top: auto;
+        font-size: clamp(1.2rem, 2vw, 1.75rem);
+    }
+}
 

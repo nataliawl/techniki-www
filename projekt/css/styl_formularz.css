@@ -85,7 +85,7 @@ input::-webkit-inner-spin-button {
     color: var(--wtekstnag);
 }
 
-@media (min-width: 28rem){
+@media (min-width: 48rem){
     .naglowek{
         margin-bottom: 1.5rem;
     }

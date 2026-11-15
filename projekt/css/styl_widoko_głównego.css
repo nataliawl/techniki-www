@@ -42,13 +42,13 @@ body {
 
 .naglowek h2{
     text-align: center;
-    font-size: 1.75rem;
+    font-size: 1.55rem;
     margin: 0.5rem;
 }
 
 .naglowek h1 {
     text-align: center;
-    font-size: 1.55rem;
+    font-size: 1.75rem;
     margin: 0.5rem;
 }
 
@@ -62,7 +62,7 @@ body {
 
 .kanban_col {
     width: calc(100% - 32px);
-    flex: 1 1 150px;
+    flex: 1 1 90%;
     margin: 10px;
     background-color: var(--kanbancol);
     border-radius: 10px;
@@ -130,7 +130,7 @@ hr{
     background-color: var(--buttoncol);
     color: var(--wtekst);
     text-align: center;
-    font-size: 10px;
+    font-size: 15px;
     padding: 8px;
     border-radius: 5px;
     margin-bottom: 10px;
@@ -177,7 +177,7 @@ hr{
     }
 }
 
-@media (min-width: 28rem){
+@media (min-width: 48rem){
     .kanban{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -190,19 +190,19 @@ hr{
     }
 
     .naglowek h1 {
-        font-size: clamp(1.4rem, 3vw, 1.75rem);
+        font-size: clamp(1.4rem, 2vw, 1.75rem);
     }
 
     .naglowek h2 {
-        font-size: clamp(1.2rem, 3vw, 1.55rem);
+        font-size: clamp(1.2rem, 2vw, 1.55rem);
     }
 
     .linki a{
-        font-size: clamp(1rem, 2vw, 1.4rem);
+        font-size: clamp(1rem, 2vw, 1.55rem);
     }
 
     .kanban_col h2 {
-        font-size: clamp(0.7rem, 2.5vw, 1.5rem);
+        font-size: clamp(0.7rem, 2vw, 1.5rem);
         flex-shrink: 0;
     }
 

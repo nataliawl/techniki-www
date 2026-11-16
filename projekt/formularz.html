@@ -3,9 +3,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Formularz- Projekt Zaliczeniowy</title>
+    <title>Formularz - Projekt Zaliczeniowy</title>
     <link rel="stylesheet"  href="css/styl_formularz.css">
-    <meta name="description" content="Tu będzie opis">
+    <meta name="description" content="Ankieta/Formularz dla fanów gier RPGMaker Horrors">
 </head>
 <body>
 
@@ -23,67 +23,67 @@
     <main>
         <form class="formularz" id="formularz">
 
-            <div class="form-control">
+            <div class="part_form">
                 <label for="imie"><b>Imię</b></label>
                 <input id="imie" type="text" class="task_input" placeholder="Wpisz imię...">
             </div>
-            <div class="form-control">
+            <div class="part_form">
                 <label for="email"><b>E-mail</b></label>
                 <input id="email" name="email" type="email" class="task_input" placeholder="Wpisz e-mail..." required>
             </div>
-            <div class="form-control">
+            <div class="part_form">
                 <label for="wiek"><b>Wiek</b></label>
                 <input id="wiek" type="number" class="task_input" placeholder="Wpisz wiek..." required>
             </div>
 
-            <div class="form-control">
+            <div class="part_form">
                 <label> <b>Z skąd znasz RPGMakerowe gry horror?</b></label>
-                <label for="inp-1">
-                    <input type="radio" name="inp" id="inp-1"> Od znajomego
+                <label for="friends">
+                    <input type="radio" id="friends"> Od znajomego
                 </label>
-                <label for="inp-2">
-                    <input type="radio" name="inp" id="inp-2"> Z platformy do dystrybucji gier (Steam, itch.io itd.)
+                <label for="platform">
+                    <input type="radio" id="platform"> Z platformy do dystrybucji gier (Steam, itch.io itd.)
                 </label>
-                <label for="inp-3">
-                    <input type="radio" name="inp" id="inp-3"> Z mediów społecznościowych (Instagram, Twitter itd.)
+                <label for="social_med">
+                    <input type="radio" id="social_med"> Z mediów społecznościowych (Instagram, Twitter itd.)
                 </label>
-                <label for="inp-4">
-                    <input type="radio" name="inp" id="inp-4"> Ze stron streamingowych (YouTube, Twitch itd.)
+                <label for="streaming">
+                    <input type="radio" id="streaming"> Ze stron streamingowych (YouTube, Twitch itd.)
                 </label>
-                <label for="inp-5">
-                    <input type="radio" name="inp" id="inp-5">Inne
+                <label for="other">
+                    <input type="radio" id="other">Inne
                 </label>
             </div>
 
-            <div class="form-control">
+            <div class="part_form">
                 <label for="comment"><b>Jeśli wybrałeś_łaś opcję inne, napisz tu swoją odpowiedź </b></label>
                 <textarea name="comment" class="task_input" id="comment" placeholder="Wpisz tu swoją odpowiedź..."></textarea>
             </div>
-            <div class="form-control">
+            <div class="part_form">
                 <label> <b>W które z poniższych tytułów grałeś_łaś?</b></label>
-                <label for="game-1">
-                    <input type="checkbox" name="game" id="game-1"> Corpse Party
+                <label for="game_1">
+                    <input type="checkbox" name="game" id="game_1"> Corpse Party
                 </label>
-                <label for="game-2">
-                    <input type="checkbox" name="game" id="game-2"> Yume Nikki
+                <label for="game_2">
+                    <input type="checkbox" name="game" id="game_2"> Yume Nikki
                 </label>
-                <label for="game-3">
-                    <input type="checkbox" name="game" id="game-3"> Mad Father
+                <label for="game_3">
+                    <input type="checkbox" name="game" id="game_3"> Mad Father
                 </label>
-                <label for="game-4">
-                    <input type="checkbox" name="game" id="game-4"> Ib
+                <label for="game_4">
+                    <input type="checkbox" name="game" id="game_4"> Ib
                 </label>
-                <label for="game-5">
-                    <input type="checkbox" name="game" id="game-5"> Hello Charlotte
+                <label for="game_5">
+                    <input type="checkbox" name="game" id="game_5"> Hello Charlotte
                 </label>
-                <label for="game-6">
-                    <input type="checkbox" name="game" id="game-6"> Omori
+                <label for="game_6">
+                    <input type="checkbox" name="game" id="game_6"> Omori
                 </label>
-                <label for="game-7">
-                    <input type="checkbox" name="game" id="game-7"> The Witch's House
+                <label for="game_7">
+                    <input type="checkbox" name="game" id="game_7"> The Witch's House
                 </label>
-                <label for="game-8">
-                    <input type="checkbox" name="game" id="game-8"> Fear & Hunger
+                <label for="game_8">
+                    <input type="checkbox" name="game" id="game_8"> Fear & Hunger
                 </label>
                 <label for="other_game">
                     <input type="checkbox" name="game" id="other_game"> Inny
@@ -93,12 +93,12 @@
                 </label>
             </div>
 
-            <div class="form-control">
+            <div class="part_form">
                 <label for="gra_comment"> <b>Jeśli wybrałeś_łaś opcję inny, napisz tu swoją odpowiedź </b> </label>
                 <textarea name="gra_comment" id="gra_comment" class="task_input" placeholder="Wpisz tu swoją odpowiedź..."></textarea>
             </div>
 
-            <div class="form-control">
+            <div class="part_form">
                 <label for="Zgoda">
                 <input id="Zgoda" type="checkbox" required>Wyrażam zgodzę na przetwarzanie moich danych osobowych na potrzebę ankiety
                 </label>

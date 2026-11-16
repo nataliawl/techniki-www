@@ -11,8 +11,7 @@
 }
 
 .okladka_mob{
-    display: block;
-    margin: 20px auto;
+    margin: 20px auto 0;
     width: 100%;
     border-radius: 5px;
     border: 2px solid var(--wtekst);
@@ -66,7 +65,6 @@
     }
 
     .okladka_mob{
-        display: flex;
         grid-area: zdjecie;
         margin: auto;
         width: 100%;

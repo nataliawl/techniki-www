@@ -10,7 +10,7 @@ function szkic(p) {
     let kontener;
     let dane;
     p.preload = function () {
-        dane = p.loadJSON('dane.json', (data) => {dane = Object.values(data);});
+        dane = p.loadJSON('json/dane.json', (data) => {dane = Object.values(data);});
     };
 
     p.setup = function () {
